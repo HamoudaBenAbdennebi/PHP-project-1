@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(to bottom right,#111,#444);
+}
+
+.header {
+    width: 100vw;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #7F7F7F;
+}
+
+.header img{
+    width: 30%;
+    filter: invert(50%);
+}
+
+.header p {
+    font-size: 40px;
+    text-align: center;
+}
+
+.nav{
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 30px;
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: 0.2s;
+}
+.nav a:hover{
+    border-bottom-color: white;
+}
+
+.container{
+    width: 100vw;
+    min-height: 90vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.container form input,.container form select{
+    width: 30%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    outline-width: 0;
+}
+
+::-webkit-input-placeholder { /* Edge */
+    color: white;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+  ::placeholder {
+    color: white;
+  }
+#sub{
+    margin-top: 5px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.menu-box {
+    width: 30%;
+    text-align: left;
+}
+
+.container form button{
+    width: 30%;
+    padding: 5px 0;
+    margin: 2px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.container form button:hover{
+    background-color: white;
+    color: #252525;
+}

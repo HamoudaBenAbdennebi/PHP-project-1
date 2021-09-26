@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commande</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">Accueil</a>
+    </div>
+    <div class="container">
+        <h1>Commande</h1>
+        <form onsubmit="return app()">
+            <input type="text" id="name" placeholder="Nom et prenom">
+            <input type="text" id="adr" placeholder="Adresse">
+            <div class="menu-box">
+                <h2>Menu</h2>
+            </div>
+            <select name="menu" id="menu">
+                <option value="Choisissez un Plat" disabled hidden selected>Choisissez un Plat</option>
+                <option value="couscous">Couscous</option>
+                <option value="spaghetti">Spaghetti</option>
+                <option value="polonaise">Polonaise</option>
+            </select>
+            <input type="text" id="qte" placeholder="Quantité">
+            <button type="submit" id="sub">Valider</button>
+            <button type="reset">Annuler</button>
+        </form>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
